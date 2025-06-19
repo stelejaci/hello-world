@@ -1,0 +1,8 @@
+site_name: RaTrace
+nav:
+  - Home: index.md
+  - Feature list: features.md
+  - Usage: usage.md
+  - Examples: examples.md
+  - To do's: todo.md
+theme: readthedocs
