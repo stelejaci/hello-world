@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Feature list - RaTrace</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Feature list";
+        var mkdocs_page_input_path = "features.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> RaTrace
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Feature list</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#raytracing-features">Raytracing features</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ui-features">UI features</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#supported-objects">Supported objects</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#light-sources">Light sources</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#lenses">Lenses</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#glass-elements">Glass elements</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#diffuse-objects">Diffuse objects</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mirrors">Mirrors</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#displays">Displays</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#varia">Varia</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../usage/">Usage</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../examples/">Examples</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../todo/">To do's</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">RaTrace</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Feature list</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="feature-list">Feature list</h1>
+<h2 id="raytracing-features">Raytracing features</h2>
+<ul>
+<li>Accurate raytracing for certain elements</li>
+<li>Approximate raytracing for segments-based descripted elements</li>
+<li>Fast raytrace mode for ordered elements or slow mode for full raytracing</li>
+<li>Dispersion of different wavelengths</li>
+<li>Tracking of ray phase information</li>
+<li>Simulation with UI or purely via console</li>
+</ul>
+<h2 id="ui-features">UI features</h2>
+<ul>
+<li>Visual representation of simulated scene</li>
+<li>Color schemes: Wavelength dependent, rainbow, fixed</li>
+<li>Glass color depends on refractive index</li>
+<li>Scene creation via a Python script</li>
+<li>Loading/reloading of scene files</li>
+<li>Export of ray data and imager data to file</li>
+<li>Number of simulated rays configurable up to 10M rays</li>
+<li>Number of plotted rays configurable</li>
+<li>Auto-redraw ON/OFF after simulation</li>
+<li>Dark background mode</li>
+<li>Showing element properties ON/OFF</li>
+<li>Intensity-coded or equal-intensity-coded ray colors</li>
+<li>Axis ON/OFF</li>
+<li>Showing non-colliding rays ON/OFF</li>
+<li>Various display representation modes: scatterplot 1D/2D, image 2D, centroid, phase plot</li>
+<li>Zoom, pan and take screenshots of all graphs</li>
+<li>Line width of rays depends on number of plotted rays, for better visualisation</li>
+</ul>
+<h2 id="supported-objects">Supported objects</h2>
+<h3 id="light-sources">Light sources</h3>
+<ul>
+<li><code>Plane source</code> - Equidistant or random distribution</li>
+<li><code>Point source</code> - Equiangular, Gaussian or random distribution</li>
+<li><code>Laser beam</code> - Simplified, but correct beam width &amp; intensity at point of impact</li>
+</ul>
+<h3 id="lenses">Lenses</h3>
+<ul>
+<li><code>Spherical lenses</code> - Defined by radii R0 and R1 or by focal distance f</li>
+<li><code>Ideal thin lens</code> - </li>
+<li><code>Ideal thick lens</code> - With principal planes</li>
+<li><code>Aspherical lens</code> - </li>
+<li><code>Custom shape</code> - Generated from svg/dxf</li>
+</ul>
+<h3 id="glass-elements">Glass elements</h3>
+<ul>
+<li><code>Slab</code> - </li>
+<li><code>Prism</code> - </li>
+<li><code>Fresnell prism</code> - </li>
+<li><code>Single microlens array</code> - </li>
+<li><code>Double microlens array</code> - </li>
+<li><code>Biprism</code> - </li>
+<li><code>Sphere</code> - </li>
+</ul>
+<h3 id="diffuse-objects">Diffuse objects</h3>
+<ul>
+<li><code>Diffuse plate</code> - Described with BSDF (diffuse &amp; specular parameters)</li>
+<li><code>Diffuse sphere</code> - </li>
+</ul>
+<h3 id="mirrors">Mirrors</h3>
+<ul>
+<li><code>Mirror</code> - </li>
+<li><code>Half-transparent mirror</code> - </li>
+<li><code>Parabolic mirror</code> - </li>
+</ul>
+<h3 id="displays">Displays</h3>
+<ul>
+<li><code>Passive display</code> - </li>
+<li><code>Imager</code> - With angular response</li>
+</ul>
+<h3 id="varia">Varia</h3>
+<ul>
+<li><code>Black surface</code> - </li>
+<li><code>Bandpass filter</code> - With angular response (blueshift)</li>
+<li><code>Diffractive element</code> - </li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../usage/" class="btn btn-neutral float-right" title="Usage">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../usage/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>To do's - RaTrace</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "To do\u0027s";
+        var mkdocs_page_input_path = "todo.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> RaTrace
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../features/">Feature list</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../usage/">Usage</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../examples/">Examples</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">To do's</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#ui">UI</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#raytracing-features">Raytracing features</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#elements">Elements</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#varia">Varia</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">RaTrace</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">To do's</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="to-dos">To do's</h1>
+<h2 id="ui">UI</h2>
+<ul>
+<li>Remove all references from the scene files to numpy, convert to np.array in the class files itself</li>
+<li>Ipv checkbox een radiobutton voor full raytrace / ordered elements</li>
+<li>Display support (centroid, image, ...) for multiple sources</li>
+<li>Laser shape visualiseren</li>
+<li>Polaire plot in display opties</li>
+<li>Lens from svg or dxf file</li>
+<li>UI tabs in aparte files</li>
+<li>if <strong>main</strong> overal implementeren</li>
+<li>4 Meer en betere properties van items plotten</li>
+<li>5 str__ methods overal standaardiseren</li>
+<li>Docstrings &amp; documentatie</li>
+<li>Beweegbaar display:<ul>
+<li>Makkelijk te verplaatsen langsheen zijn normaal bv.</li>
+<li>Interseccties enkel met rays die nog geen eindpunt hebben</li>
+</ul>
+</li>
+<li>Console output in 4th tab "Console"</li>
+<li>
+<p>Fifth tab with "about" or so</p>
+</li>
+<li>
+<p>DONE:</p>
+<ul>
+<li>Laten werken zonder UI</li>
+<li>Splash screen (see: https://stackoverflow.com/questions/58661539/create-splash-screen-in-pyqt5)</li>
+<li>3 Automatisatie:<ul>
+<li>UI opstarten met een bepaalde scene, en runnen</li>
+<li>Allow for changing element properties:</li>
+<li>After loading the scene: mss wat te complex</li>
+<li>In main_console.py een parameter file schrijven en die dan inlezen in de load_scene of zo</li>
+<li>Inzoomen op een bepaald deel van de grafiek</li>
+<li>Een screenshot nemen van een bepaalde grafiek (canvas of canvasDisplay)</li>
+<li>Afsluiten</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="raytracing-features">Raytracing features</h2>
+<ul>
+<li>1 Scatteren op diffuse oppervlakken doen met importance sampling (cumsum etc) en equal intensities, ipv random en weighed intensities</li>
+<li>2 Virtual rays enkel mogelijk wanneer de "full raytrace" aanstaat ipv de snelle met "ordered items"</li>
+<li>Imager response implementeren &amp; plotten</li>
+<li>Andere definities van N toelaten voor dispersie</li>
+<li>pre-defined glass property list</li>
+<li>
+<p>Reflecties aan glas elementen implementeren</p>
+</li>
+<li>
+<p>DONE:</p>
+<ul>
+<li>Back-tracing van bv. centroid, m.b.v. virtual sources</li>
+<li>Rays exporteren naar txt file, in een bepaald formaat</li>
+<li>Bewaar in de ray zelf de relatieve display coordinaat, en pixel nummer</li>
+<li>Imager resultaat exporteren (centroid, ...)</li>
+<li>Full, slower, non-sorted-slements raytracing</li>
+</ul>
+</li>
+</ul>
+<h2 id="elements">Elements</h2>
+<ul>
+<li>Diffuse sphere            </li>
+<li>Filter</li>
+<li>6 IdealThickLensClass</li>
+<li>Glass sphere</li>
+<li>Single ray source</li>
+<li>Aspherical lens</li>
+<li>Diffractive elements (aan de randen)</li>
+<li>Microlens</li>
+<li>Fresnell</li>
+<li>Biprism</li>
+<li>
+<p>Powell lens</p>
+</li>
+<li>
+<p>DONE:</p>
+<ul>
+<li>Ideal thin lens class</li>
+<li>Spherical lens</li>
+<li>Diffuse plate</li>
+<li>Glass plate</li>
+<li>Flat mirror</li>
+<li>Parabolic mirror</li>
+<li>Mirror only one side reflective</li>
+<li>Semi-transparent mirror</li>
+</ul>
+</li>
+</ul>
+<h2 id="varia">Varia</h2>
+<ul>
+<li>Documentation</li>
+<li>Example files</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../examples/" class="btn btn-neutral float-left" title="Examples"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../examples/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
